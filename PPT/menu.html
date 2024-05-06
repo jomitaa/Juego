@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <section class="titulo">
+            <h1>¡PIEDRA, PAPEL O TIJERAA!</h1>
+        </section>
+
+        <div class="todo">
+            <div class="modo"><h2>Modos De Juego</h2></div>
+            
+            <div class="contenedor JcJ" id="atras">
+                    <h2>Jugador VS Jugador</h2>
+                    <div class="imagen">
+                        <img src="https://cdn-icons-png.flaticon.com/256/3196/3196378.png" alt="">
+                    </div>
+                    <a href="./JcJ/index.html"><button type="submit" class="boton">Jugar</button></a>
+                    <div class="link">
+                        <a href="#" class="opc" onclick="sig()"><p> <</p></a>
+                    </div>
+            </div>
+    
+            <div class="contenedor JcCPU" id="sig">
+                <h2>Jugador VS CPU</h2>
+                    <div class="imagen">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4801/4801801.png" alt="">
+                    </div>
+                    <a href="./JcCPU/index.html"><button type="submit" class="boton">Jugar</button></a>
+                    <div class="link">
+                        <a href="#" class="opc" onclick="atras()"><p> ></p></a>
+                    </div>
+            </div>
+        </div>
+
+
+<script src="./js.js"></script>
+</body>
+</html>

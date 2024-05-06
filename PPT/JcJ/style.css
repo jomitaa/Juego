@@ -1,0 +1,147 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  background: #f6f7fb;
+}
+
+.contenedor {
+  position: relative;
+  padding: 1rem 4rem;
+  border: .4rem solid rgb(98, 143, 227);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes_jugadores {
+  display: flex;
+  column-gap: 12rem;
+  justify-content: center;
+}
+
+.contenedor.start .usuario1 {
+  transform-origin: left;
+  animation: uanim 0.6s ease infinite;
+}
+
+@keyframes uanim {
+  25% {
+    transform: rotate(20deg);
+  }
+}
+
+.contenedor.start .usuario2 {
+  transform-origin: right;
+  animation: canim 0.6s ease infinite;
+}
+
+@keyframes canim {
+  25% {
+    transform: rotate(-20deg);
+  }
+}
+
+.imagenes_jugadores img {
+  width: 100px;
+}
+
+.usuario1 img {
+  transform: rotate(90deg);
+}
+
+.usuario2 img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+
+.puntajes {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2a86e8;
+  margin-top: .75rem;
+  margin-left:3rem; margin-right: 3rem;
+}
+
+.resultado {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a86e8;
+  margin-top: 1rem;
+}
+
+.opc_img img {
+  width: 80px;
+}
+.opc {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-between;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.opc_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.opc_img:hover {
+  opacity: 2;
+}
+
+.opc_img img {
+  pointer-events: none;
+}
+.opc_img p {
+  color: #2a70e8;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(to right, #3b7cc7, #2f1ba0);
+  width: 60%;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.rg{
+  display: flex;
+  place-content: center;
+  margin-top: 1rem;
+}
+
+.rg img {
+  transition: .7s;
+  width: 60px;
+}
+
+.rg img:hover {
+  opacity: .5;
+  width: 75px;
+}
