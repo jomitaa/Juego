@@ -175,7 +175,7 @@ image.addEventListener("click", (e) => {
             gamecontenedor.classList.add("start");
             setTimeout(() => {
                 gamecontenedor.classList.remove("start");
-
+                
                 let imageSrc = e.target.querySelector("img").src;
 
                 if (currentPlayer === 1) {
